@@ -139,6 +139,10 @@ section .heading h2{
 	text-shadow: 2px 2px 2px #000;
 }
 
+#competences p{
+	margin-left: 4rem;
+}
+
 /*EXPERIENCE*/
 #experience{
 	background: #32CD32;
@@ -346,4 +350,46 @@ footer .glyphicon:hover{
 footer h5{
 	font-weight: normal;
 	color: #fff;
+}
+
+@media only screen and (max-width: 540px){
+	/*Les petits triangles qui touchent les ronds du milieu*/
+	.particularite-panel:after{
+		display: none;
+	}
+
+	.particularite li .particularite-badge{
+		display: none;
+	}
+
+	.particularite:before{
+		display: none;
+	}
+
+	.particularite{
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.particularite-panel{
+		float: none;
+		/*width: 100%;*/
+		margin: 0 auto;
+	}
+
+	.particularite-panel-container{
+		width: 100%;
+		float: none !important;
+	}
+
+	.particularite-panel-container-inverted{
+		width: 100%;
+		float: none !important;
+	}
+	
+	.particularite-panel-container-inverted .particularite-panel{
+		float: none;
+		margin: 0 auto;
+	}
+
 }
